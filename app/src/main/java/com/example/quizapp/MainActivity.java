@@ -11,7 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
-    private Button button1,button2,next_Button;
+    private Button button1,button2,next_Button,previous_button;
     private TextView questionTextView;
     private int currentQuestionIndex = 0;
 
@@ -35,11 +35,13 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         button1 = findViewById(R.id.true_button_Id);
         button2 = findViewById(R.id.false_button_Id);
         next_Button = findViewById(R.id.next_button_Id);
+        previous_button = findViewById(R.id.previous_button_Id);
         questionTextView = findViewById(R.id.question_text_view_id);
 
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         next_Button.setOnClickListener(this);
+        previous_button.setOnClickListener(this);
 
     }
 
@@ -57,6 +59,12 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             case R.id.next_button_Id:
                 currentQuestionIndex = (currentQuestionIndex+1)%question.length ;
                 updateQuestion();
+                break;
+            case R.id.previous_button_Id:
+                if (currentQuestionIndex>0){
+                    currentQuestionIndex = (currentQuestionIndex-1)%question.length ;
+                    updateQuestion();
+                }
         }
 
     }
