@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="correct_answer">That\'s correct</string>
+    <string name="wrong_answer">That\'s incorrect</string>
+    <string name="text_name1">Ichamati River flows across the India-Bangladesh border?</string>
+    <string name="text_name2">Situated in South Asia, Bangladesh is bordered by japan and bhutan to the south-east?</string>
+    <string name="text_name3">60 Districts are there in Bangladesh</string>
+    <string name="text_name4">+880 is the country calling code for Bangladesh</string>
+    <string name="text_name5">Official language of Bangladesh is Hindi</string>
+    <string name="text_name6">National game of Bangladesh is Kabadi</string>
+    <string name="text_name7">Natore is Highest population city of Bangladesh</string>
+    <string name="text_name8">dollar is the currency of Bangladesh?</string>
+    <string name="text_name9">Dhaka is the capital city of Bangladesh</string>
+</resources>
